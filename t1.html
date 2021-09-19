@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Task</title>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+		<link rel="stylesheet" href="week6.css" type="text/css" />
+	</head>
+	<body>
+		<form id="aaa">
+			<p>
+				<input type="text" v-model= "msg">
+				{{msg}}
+			</p>
+			
+			<p>
+				<input type="checkbox" v-model="checked">
+				{{checkde ? "yes" : "no"}}
+			</p>
+			<p>
+				<input type="radio" name="picked" value="Male" v-model="picked">
+				<input type="radio" name="picked" value="Female" v-model="picked">
+				{{picked}}
+			</P>
+			
+			<p>
+				<!--slect-->
+			</p>
+			<p>
+				<select v-model="selected">
+					<option>January</option>
+					<option>February </option>
+                    <option>March </option>
+					<option>April</option>
+					<option>May</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+				</select>	
+				{{selected}}
+			</p>	
+			
+	</form>
+	
+	<div id="bbb" >
+	  <input type="checkbox" id=CSGO"" value="CS:GO" v-model="hobby" />
+	  <label for="CSGO">CS:GO</label>
+	  <input type="checkbox" id="lol" value="LOL" v-model="hobby" />
+	  <label for="lol">LOL</label>
+	  <input type="checkbox" id="dota2" value="DOTA2" v-model="hobby" />
+	  <label for="dota2">DOTA2</label>
+	  <br />
+	  <span>Hobby: {{ hobby }}</span>
+	</div>
+	
+
+
+
+
+	<script src="./t1.js"></script>
+
+	</body>
+	
+
+</html>
